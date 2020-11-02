@@ -1,0 +1,13 @@
+import random
+print("=========================\n Gerador de Senhas\n=========================")
+caracteres = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@£$%^&*().,?0123456789'
+
+tamanho = input("Qual o tamanho desejado da senha?")
+tamanho = int(tamanho)
+
+print("Aqui esta a sua senha:")
+senha = ''
+
+for x in range(tamanho):
+    senha += random.choice(caracteres)
+print(senha)

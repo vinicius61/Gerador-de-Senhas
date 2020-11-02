@@ -1,0 +1,8 @@
+import random
+import string
+numero = input("Qual o tamanho da sua senha?")
+numero = int(numero)
+senha = ''
+for x in range(numero):
+    senha += random.choice(string.ascii_letters)
+print(senha)
